@@ -22,6 +22,7 @@ echo ""
 echo "12 Largest fies"
 echo "===================================>"
 find / -type f -exec -ls -s  2>/dev/null | head -n 12
+echo "===================================>"
 
 # for the task, add
 # commands to display a title
