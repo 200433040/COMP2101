@@ -1,1 +1,1 @@
-﻿get-ciminstance win32_networkadapterconfiguration | Where-Object {$_.IPEnabled -eq $True} | Select description, index, ipaddress, ipsubnet, dnsdomain, DnsServerSearchorder| Format-Table -AutoSize
+﻿get-ciminstance win32_networkadapterconfiguration -Filter ipenabled=true | Select description, index, ipaddress, ipsubnet, dnsdomain, DnsServerSearchorder| Format-Table -AutoSize
